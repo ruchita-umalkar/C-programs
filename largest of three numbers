@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 10, b = 20, c = 15;
+
+        if (a > b && a > c)
+            Console.WriteLine("A is largest");
+        else if (b > c)
+            Console.WriteLine("B is largest");
+        else
+            Console.WriteLine("C is largest");
+    }
+}
