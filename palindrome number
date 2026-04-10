@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int num = 121, temp, reverse = 0;
+        temp = num;
+
+        while (num != 0)
+        {
+            int digit = num % 10;
+            reverse = reverse * 10 + digit;
+            num /= 10;
+        }
+
+        if (temp == reverse)
+            Console.WriteLine("Palindrome");
+        else
+            Console.WriteLine("Not Palindrome");
+    }
+} 
