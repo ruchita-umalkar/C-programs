@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int num = 153, temp, sum = 0;
+        temp = num;
+
+        while (num != 0)
+        {
+            int digit = num % 10;
+            sum += digit * digit * digit;
+            num /= 10;
+        }
+
+        if (temp == sum)
+            Console.WriteLine("Armstrong Number");
+        else
+            Console.WriteLine("Not Armstrong");
+    }
+}
