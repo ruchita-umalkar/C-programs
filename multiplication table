@@ -1,0 +1,14 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int num = 5;
+
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine(num + " x " + i + " = " + (num * i));
+        }
+    }
+}
