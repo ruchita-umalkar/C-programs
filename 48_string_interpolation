@@ -1,0 +1,15 @@
+// Program to demonstrate string interpolation
+using System;
+class Program
+{
+    static void Main()
+    {
+        string name = "John";
+        int age = 30;
+
+        // Using string interpolation to create a formatted string
+        string message = $"My name is {name} and I am {age} years old.";
+
+        Console.WriteLine(message);
+    }
+}

@@ -1,0 +1,14 @@
+// Program to demonstrate Math class 
+using System;
+class Program
+{
+    static void Main()
+    {
+        double x = 16;
+        double y = 4;
+
+        Console.WriteLine("Square root of {0} is {1}", x, Math.Sqrt(x));
+        Console.WriteLine("Power of {0} raised to {1} is {2}", x, y, Math.Pow(x, y));
+        Console.WriteLine("Absolute value of -{0} is {1}", x, Math.Abs(-x));
+    }
+}

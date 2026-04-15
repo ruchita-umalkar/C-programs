@@ -1,0 +1,15 @@
+// Program to demonstrate DateTime class 
+using System;
+class Program
+{
+    static void Main()
+    {
+        DateTime now = DateTime.Now;
+        DateTime today = DateTime.Today;
+        DateTime specificDate = new DateTime(2023, 10, 15);
+
+        Console.WriteLine("Current Date and Time: " + now);
+        Console.WriteLine("Today's Date: " + today);
+        Console.WriteLine("Specific Date: " + specificDate);
+    }
+}

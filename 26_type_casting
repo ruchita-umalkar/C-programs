@@ -1,0 +1,15 @@
+//Program to demonstrate type casting 
+using System;
+class Program
+{
+    static void Main()
+    {
+        int a = 10;
+        double b = a; // Implicit type casting
+        Console.WriteLine("Value of b: " + b);
+
+        double c = 10.5;
+        int d = (int)c; // Explicit type casting
+        Console.WriteLine("Value of d: " + d);
+    }
+}

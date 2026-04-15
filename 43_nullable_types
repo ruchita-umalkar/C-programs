@@ -1,0 +1,28 @@
+//Program to demonstrate nullable types 
+using System;
+class Program
+{
+    static void Main()
+    {
+        int? nullableInt = null; // Nullable integer
+
+        if (nullableInt.HasValue)
+        {
+            Console.WriteLine("Value: " + nullableInt.Value);
+        }
+        else
+        {
+            Console.WriteLine("The variable is null.");
+        }
+
+        // Assigning a value to the nullable integer
+        nullableInt = 42;
+
+        if (nullableInt.HasValue)
+        {
+            Console.WriteLine("Value: " + nullableInt.Value);
+        }
+    }
+}
+
+

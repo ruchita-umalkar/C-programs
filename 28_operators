@@ -1,0 +1,30 @@
+// Program to demonstrate operators 
+using System;
+class Program
+{
+    static void Main()
+    {
+        int a = 10, b = 20;
+
+        // Arithmetic Operators
+        Console.WriteLine("a + b = " + (a + b)); // Addition
+        Console.WriteLine("a - b = " + (a - b)); // Subtraction
+        Console.WriteLine("a * b = " + (a * b)); // Multiplication
+        Console.WriteLine("b / a = " + (b / a)); // Division
+        Console.WriteLine("b % a = " + (b % a)); // Modulus
+
+        // Comparison Operators
+        Console.WriteLine("a == b: " + (a == b)); // Equal to
+        Console.WriteLine("a != b: " + (a != b)); // Not equal to
+        Console.WriteLine("a > b: " + (a > b));   // Greater than
+        Console.WriteLine("a < b: " + (a < b));   // Less than
+
+        // Logical Operators
+        bool x = true, y = false;
+        Console.WriteLine("x && y: " + (x && y)); // Logical AND
+        Console.WriteLine("x || y: " + (x || y)); // Logical OR
+        Console.WriteLine("!x: " + (!x));         // Logical NOT
+    }
+}
+
+

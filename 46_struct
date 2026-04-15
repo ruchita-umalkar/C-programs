@@ -1,0 +1,26 @@
+// Program to demonstrate struct 
+using System;
+class Program
+
+
+
+{
+    struct Employee
+    {
+        public int Id;
+        public string Name;
+        public double Salary;
+    }
+
+    static void Main()
+    {
+        Employee emp1;
+        emp1.Id = 101;
+        emp1.Name = "John Doe";
+        emp1.Salary = 50000;
+
+        Console.WriteLine("Employee ID: " + emp1.Id);
+        Console.WriteLine("Employee Name: " + emp1.Name);
+        Console.WriteLine("Employee Salary: " + emp1.Salary);
+    }
+}

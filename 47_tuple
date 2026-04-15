@@ -1,0 +1,15 @@
+// Program to demonstrate tuples
+using System;
+class Program
+{
+    static void Main()
+    {
+        // Creating a tuple to store employee details
+        var employee = (Id: 101, Name: "John Doe", Salary: 50000);
+
+        // Accessing tuple elements
+        Console.WriteLine("Employee ID: " + employee.Id);
+        Console.WriteLine("Employee Name: " + employee.Name);
+        Console.WriteLine("Employee Salary: " + employee.Salary);
+    }
+}

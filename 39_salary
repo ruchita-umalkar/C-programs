@@ -1,0 +1,14 @@
+// Program to calculate salary with allowances 
+using System;
+class Program
+{
+    static void Main()
+    {
+        double basicSalary = 50000;
+        double hra = 0.2 * basicSalary; // House Rent Allowance
+        double da = 0.1 * basicSalary;  // Dearness Allowance
+        double grossSalary = basicSalary + hra + da;
+
+        Console.WriteLine("Gross Salary = " + grossSalary);
+    }
+}

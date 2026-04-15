@@ -1,0 +1,12 @@
+//Program to print ASCII value of a character    
+using System;
+class Program
+{
+    static void Main()
+    {
+        char ch = 'A';
+        int ascii = (int)ch;
+
+        Console.WriteLine("ASCII value of " + ch + " is: " + ascii);
+    }
+}
