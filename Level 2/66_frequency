@@ -1,0 +1,29 @@
+//  Program to find frequency of characters 
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        string str = "Hello, World!";
+        Dictionary<char, int> frequency = new Dictionary<char, int>();
+
+        foreach (char c in str)
+        {
+            if (frequency.ContainsKey(c))
+            {
+                frequency[c]++;
+            }
+            else
+            {
+                frequency[c] = 1;
+            }
+        }
+
+        foreach (var kvp in frequency)
+        {
+            Console.WriteLine("Character '{0}' appears {1} times.", kvp.Key, kvp.Value);
+        }
+    }
+}

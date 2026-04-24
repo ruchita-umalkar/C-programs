@@ -1,0 +1,6 @@
+// Program to demonstrate abstract class vs interface 
+using System;
+abstract class Animal
+{
+    public abstract void MakeSound();
+}

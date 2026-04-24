@@ -1,0 +1,15 @@
+// Program to demonstrate named arguments 
+using System;
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Result 1: " + Calculate(x: 5, y: 10));
+        Console.WriteLine("Result 2: " + Calculate(x: 5, y: 10, z: 15));
+    }
+
+    static int Calculate(int x, int y, int z = 0)
+    {
+        return x + y + z;
+    }
+}

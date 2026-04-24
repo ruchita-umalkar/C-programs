@@ -1,0 +1,17 @@
+//  Program to demonstrate constructor 
+using System;
+class MyClass
+{
+    private int value;
+
+    // Constructor
+    public MyClass(int initialValue)
+    {
+        value = initialValue;
+    }
+
+    public void DisplayValue()
+    {
+        Console.WriteLine("Value: " + value);
+    }
+}

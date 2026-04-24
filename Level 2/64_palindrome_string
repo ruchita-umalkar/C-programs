@@ -1,0 +1,28 @@
+//  Program to check palindrome string 
+using System;
+class Program
+{
+    static void Main()
+    {
+        string str = "racecar";
+        string cleanedStr = "";
+        foreach (char c in str)
+        {
+            if (char.IsLetter(c))
+            {
+                cleanedStr += char.ToLower(c);
+            }
+        }
+        char[] charArray = cleanedStr.ToCharArray();
+        Array.Reverse(charArray);
+        string reversedStr = new string(charArray);
+        if (cleanedStr == reversedStr)
+        {
+            Console.WriteLine("The string is a palindrome.");
+        }
+        else
+        {
+            Console.WriteLine("The string is not a palindrome.");
+        }
+    }
+}

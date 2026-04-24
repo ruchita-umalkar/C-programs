@@ -1,0 +1,18 @@
+//Program to demonstrate out and ref keywords 
+using System;
+class Program
+{
+    static void Main()
+    {
+        int a = 5;
+        int b = 10;
+        int sum;
+        Add(a, b, out sum);
+        Console.WriteLine("Sum of {0} and {1} is {2}", a, b, sum);
+    }
+
+    static void Add(int x, int y, out int z)
+    {
+        z = x + y;
+    }
+}

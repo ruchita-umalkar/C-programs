@@ -1,0 +1,31 @@
+//  Program to find second largest element in array 
+using System;
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 5, 10, 15, 20 };
+        Console.WriteLine("Second largest element is: " + FindSecondLargest(numbers));
+    }
+
+    static int FindSecondLargest(int[] arr)
+    {
+        int largest = int.MinValue;
+        int secondLargest = int.MinValue;
+
+        foreach (int n in arr)
+        {
+            if (n > largest)
+            {
+                secondLargest = largest;
+                largest = n;
+            }
+            else if (n > secondLargest && n != largest)
+            {
+                secondLargest = n;
+            }
+        }
+
+        return secondLargest;
+    }
+}

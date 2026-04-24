@@ -1,0 +1,17 @@
+//Program to compare strings 
+using System;
+class Program
+{
+    static void Main()
+    {
+        string str1 = "Hello, World!";
+        string str2 = "Hello, World!";
+        string str3 = "hello, world!";
+
+        bool result1 = string.Equals(str1, str2);
+        bool result2 = string.Equals(str1, str3, StringComparison.OrdinalIgnoreCase);
+
+        Console.WriteLine("Are str1 and str2 equal? " + result1);
+        Console.WriteLine("Are str1 and str3 equal (case-insensitive)? " + result2);
+    }
+}

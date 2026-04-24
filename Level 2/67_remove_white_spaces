@@ -1,0 +1,11 @@
+//  Program to remove white spaces from string 
+using System;
+class Program
+{
+    static void Main()
+    {
+        string str = "  Hello, World!  ";
+        str = str.Trim();
+        Console.WriteLine("String after removing white spaces: " + str);
+    }
+}
